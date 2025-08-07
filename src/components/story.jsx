@@ -2,10 +2,10 @@ import cheif from '../assets/chefs.jpg'
 const Story=()=>{
     return(
 
-        <div className='border-2 border-b-blue-950 border-t-emerald-800 rounded-2xl p-8 m-4 border-l-yellow-500 border-r-red-800 '>
+        <div className='bg-gray-300 border-5 border-b-blue-950 border-t-emerald-800 rounded-2xl p-8 m-4 border-l-yellow-500 border-r-red-800 '>
             <h1 className='text-center text-4xl font-bold  '>Our Story</h1>
             <div className='flex justify-center gap-x-30 mt-10'>
-                <p className='pt-16'>
+                <p className='pt-16 font-serif'>
                     In 2021, two passionate Ethiopian chefs turned friendship into a mission.<br/>
                     Their love for Ethiopia’s food, culture, and history ran deep.
                     <br/>
