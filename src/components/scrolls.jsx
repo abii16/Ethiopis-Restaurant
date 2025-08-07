@@ -1,11 +1,17 @@
-const Scrolls=()=>{
-    return(
-        <div className="flex justify-center mt-30 gap-x-10">
-            <button className="cursor-pointer size-2 rounded-full border border-black bg-transparent"></button>
-            <button className="cursor-pointer size-2 rounded-full bg-gray-200"></button>
-            <button className="cursor-pointer size-2 rounded-full border border-black bg-transparent"></button>
-        
-        </div>
-    );
+const Scrolls = ({ images, currentIndex, scrollslide }) => {
+  return (
+    <div className="flex justify-center space-x-2 mt-35">
+      {images.map((_, idx) => (
+        <button
+          key={idx}
+          onClick={() => scrollslide(idx)}
+          className={`w-4 h-1 rounded-full ${
+            currentIndex === idx ? 'bg-white' : 'bg-gray-400'
+          }`}
+        ></button>
+      ))}
+    </div>
+  );
 };
+
 export default Scrolls;
